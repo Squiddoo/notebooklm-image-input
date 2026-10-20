@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "NotebookLM Image Input",
+  "version": "1.0.0",
+  "description": "Paste a screenshot into the NotebookLM chat (Ctrl+V or +). The image is converted to text locally and inserted as input.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["offscreen", "storage"],
+  "host_permissions": [
+    "https://notebooklm.google.com/*",
+    "https://notebook.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://notebooklm.google.com/*",
+        "https://notebook.google.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; worker-src 'self';"
+  }
+}
