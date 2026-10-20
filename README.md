@@ -1,52 +1,52 @@
 # NotebookLM Image Input
 
-Chrome-extensie om screenshots en bestanden als tekst in te voegen in de NotebookLM-chat.
+A Chrome extension that inserts screenshots and files into the NotebookLM chat as text.
 
-## Wat het doet
+## What it does
 
-De chat in NotebookLM accepteert alleen tekst. Met deze extensie voeg je afbeeldingen toe als tekst aan je invoer, zonder ze als bron op te slaan.
+The NotebookLM chat only accepts text. This extension turns images into text and inserts that text into your prompt, without saving the image as a source.
 
-- Plak een screenshot met `Ctrl+V` in de chat
-- Sleep een bestand naar het invoerveld
-- Klik op de `+`-knop om een bestand te kiezen
-- Ondersteunt afbeeldingen en tekstbestanden
+- Paste a screenshot into the chat with `Ctrl+V`
+- Drag and drop a file onto the input field
+- Click the `+` button to pick a file
+- Supports images and text files
 
-De extensie converteert de afbeelding lokaal naar tekst (OCR) en voegt die tekst toe aan je chat-invoer. Het wordt niet als bron toegevoegd.
+OCR runs locally and the result is appended to your chat input. Nothing is uploaded and no source is created.
 
-## Installatie
+## Installation
 
-1. Download of clone deze repository
-2. Ga in Chrome naar `chrome://extensions`
-3. Schakel ontwikkelaarsmodus in
-4. Klik op `Unpacked laden` en selecteer de map van deze extensie
-5. Vernieuw notebooklm.google.com
+1. Download or clone this repository
+2. Open `chrome://extensions` in Chrome
+3. Enable developer mode
+4. Click `Load unpacked` and select this extension's folder
+5. Reload notebooklm.google.com
 
-## Gebruik
+## Usage
 
-- **Ctrl+V**: plak screenshot uit klembord
-- **+**: kies een bestand
-- **Sleep en zet neer**: sleep bestand naar invoerveld
-- **Enter**: tekst wordt toegevoegd aan invoer. Druk nogmaals op Enter om te verzenden.
+- **Ctrl+V**: paste a screenshot from the clipboard
+- **+**: pick a file
+- **Drag and drop**: drop a file onto the input field
+- **Enter**: the text is inserted into the input. Press Enter again to send.
 
-## Instellingen
+## Settings
 
-Klik op het tandwiel-icoon:
+Click the gear icon:
 
-- Direct verzenden na OCR: aan/uit
-- Max invoer karakters: limiet voor teller (standaard 3.900)
+- Auto-send after OCR: on/off
+- Max input characters: counter limit (default 3,900)
 
-## Techniek
+## How it works
 
-OCR draait lokaal via Tesseract.js in een offscreen document. Niets wordt geupload.
+OCR runs locally through Tesseract.js in an offscreen document. Nothing leaves your machine.
 
-## Bestanden
+## Files
 
-- `manifest.json` - extensie manifest
-- `content.js` - UI, plakken, slepen, OCR, tekst invoegen
-- `background.js` - service worker en offscreen beheer
-- `offscreen.html`, `offscreen.js` - lokale OCR
-- `vendor/` - Tesseract.js, worker, wasm-core, trained-data (eng, nld)
+- `manifest.json` - extension manifest
+- `content.js` - UI, paste, drag and drop, OCR, text insertion
+- `background.js` - service worker and offscreen management
+- `offscreen.html`, `offscreen.js` - local OCR
+- `vendor/` - Tesseract.js, worker, wasm core, trained data (eng, nld)
 
-## Licentie
+## License
 
 MIT
