@@ -5,7 +5,6 @@
 **A Chrome extension that inserts text from screenshots and files directly into [Google NotebookLM](https://notebooklm.google.com/).**
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=flat&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
 [![OCR](https://img.shields.io/badge/OCR-Tesseract.js-2D8CFF?style=flat)](https://github.com/naptha/tesseract.js)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat)](LICENSE)
 
