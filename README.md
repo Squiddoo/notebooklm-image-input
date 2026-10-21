@@ -24,7 +24,7 @@ OCR runs locally through Tesseract.js, so images don't need to be uploaded to an
 
 <div align="center">
 
-![NotebookLM Image Input in action]([https://cdn.discordapp.com/attachments/1542569852617756713/1562451032376615083/ff1z7bp.gif?ex=6ada096b&is=6ad8b7eb&hm=da7afa27a9477ea7badc945018edf0d6e096cd4ad5c5f50ca0bc4bf490614dab&](https://cdn.discordapp.com/attachments/1542569852617756713/1562451677313892414/x3bsp8h.gif?ex=6ada0a04&is=6ad8b884&hm=5d581eae335c09649e03ad6318c4616d4e0d7a66734d79df1d207d7705866daf&))
+![NotebookLM Image Input in action](https://cdn.discordapp.com/attachments/1542569852617756713/1562451677313892414/x3bsp8h.gif?ex=6ada0a04&is=6ad8b884&hm=5d581eae335c09649e03ad6318c4616d4e0d7a66734d79df1d207d7705866daf&)
 
 </div>
 
