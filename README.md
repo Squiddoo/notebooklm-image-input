@@ -20,6 +20,14 @@ NotebookLM's chat is designed for text, but sometimes the information you need i
 
 OCR runs locally through Tesseract.js, so images don't need to be uploaded to an external OCR service.
 
+## Preview
+
+<div align="center">
+
+![NotebookLM Image Input in action](https://cdn.discordapp.com/attachments/1542569852617756713/1562451032376615083/ff1z7bp.gif?ex=6ada096b&is=6ad8b7eb&hm=da7afa27a9477ea7badc945018edf0d6e096cd4ad5c5f50ca0bc4bf490614dab&)
+
+</div>
+
 ## Features
 
 | Feature | Description |
